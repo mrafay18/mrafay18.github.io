@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', serif;
+}
+
+.nav-bar{ /*sets links to different tabs to the top right of the page*/
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.nav-bar button{ /*links button design*/
+    background-color: #FFD700;
+    color: black;
+    cursor: pointer; /*changes mouse style when hovered over button*/
+}
+
+.content{
+    display: flex;
+    flex: 1; /*fit page*/
+}
+
+.left-column, .right-column{ /*splits pdf from everything else*/
+    width: 50%;
+    padding: 10px; /*column divider*/
+}
+
+h2{
+    color: #FFD700;
+}
+
+.right-column ul{
+    padding: 10px; /*column divider*/
+}
+
+a{
+    color: #FFD700; /*theme color for links*/
+}
