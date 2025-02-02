@@ -183,6 +183,56 @@ h4 a:hover {
     text-decoration: underline;
 }
 
+/* Dropdown Styles */
+.dropdown {
+    background-color: #3f4a60; /* Matches your color scheme */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Add smooth hover effect */
+}
+
+/* Change the background color on hover */
+.dropdown:hover {
+    background-color: #2b3542; /* Slightly darker shade for hover effect */
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3f4a60; /* Matches your color scheme */
+    min-width: 160px;
+    z-index: 1;
+    transition: max-height 0.3s ease-out, padding 0.3s ease; /* Add transition for dropdown animation */
+    max-height: 0; /* Initially hidden */
+    overflow: hidden;
+    padding: 0;
+}
+
+/* Show the dropdown when hovered or focused */
+.dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {
+    display: block;
+    max-height: 500px; /* Make it fully visible */
+    padding: 10px;
+}
+
+/* Styling for each item in the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change the background color of links when hovered */
+.dropdown-content a:hover {
+    background-color: #2b3542; /* Darker shade when hovering over links */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-bar {
