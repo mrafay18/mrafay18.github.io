@@ -1,115 +1,133 @@
-/*final version 2*/
-/*home page (index)*/
-body{ /*page background; text color and font*/
-    background-color: black;
-    color: white;
-    font-family: 'Times New Roman', serif;
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
 }
 
-.nav-bar{ /*sets links to different tabs to the top right of the page*/
+.nav-bar {
     display: flex;
     justify-content: flex-end;
+    background-color: #333; /* Dark background for navigation */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
-.nav-bar button{
+.nav-bar button {
     background-color: #FFD700;
-    color: black;
-    cursor: pointer; /*changes mouse style when hovered over button*/
+    color: #333;
+    cursor: pointer;
+    margin-left: 10px; /* Space between buttons */
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-header{ /*centers everything*/
+.nav-bar button:hover {
+    background-color: #FFDF7E; /* Lighter shade on hover */
+}
+
+header {
     text-align: center;
+    padding: 40px 20px;
 }
 
-header img{ 
-    width: 200px; /*sets size of headshot*/
+header img {
+    width: 150px;
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow */
 }
 
-details{ /*dropdown menu*/
-    background-color: #FFD700; 
-    padding: 5px;
-    border: 1px solid white; /*leave this white to differentiate sections*/
+details {
+    background-color: #fff; /* White background */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
-details[open]{
-    background-color: black; /*black background for open dropdown menu*/
+details[open] {
+    background-color: #f2f2f2; /* Light gray when open */
 }
 
-summary{ /*dropdown transition*/
-    font-size: 1.75em; /*increases default size*/
+summary {
+    font-size: 1.5em;
     cursor: pointer;
 }
 
-a{
-    color: #FFD700; /*theme color for linkedin link*/
+a {
+    color: #FFD700;
+    text-decoration: none;
 }
 
-p{
-    font-size: 1.5em; /*increases default size*/
+a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
-/*qualifications*/
-.qualifications-body{
-    background-color: black;
-    color: white;
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
-.content{
-    display: flex; /*fit page*/
+/* Qualifications Page */
+.left-column, .right-column {
+    width: 50%; /* Equal width columns */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.left-column {
+    background-color: #333;
+    color: #fff;
+}
+
+.right-column {
+    background-color: #fff;
+    color: #333;
+}
+
+.content {
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin: 20px;
 }
 
-.left-column, .right-column{ /*splits pdf from everything else*/
-    width: 48%;
-    background-color: black;
-    color: white;
-}
-
-.content iframe{
+.content iframe {
     width: 100%;
     height: 600px;
-    border: none; /*no border*/
+    border: none;
 }
 
-/*technical portfolio*/
-h1{ /*change style*/
-    text-align: center;
-    font-size: 2.5em;
-    color: #FFD700;
+/* Service Page */
+.organization {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.center-text{ /*center specific project type*/
-    text-align: center;
+.organization img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.column ul{ /*no bullet points*/
-    list-style: none;
-}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
 
-.column li p{
-    margin-left: 20px; /*indent description*/
-}
-
-.external-links{ /*center linkedin and github icons*/
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.external-links img{
-    width: 80px;
-    height: auto; /*helps to maintain aspect ratio of icon*/
-    margin: 10px;
-}
-
-/* Service Page Styles */
-h1, h2{
-    color: #FFD700;
-}
-
-.organization img{
-    max-width: 300px; /*largest allowed width*/
-    height: auto; /*without distorting image*/
+    .left-column, .right-column {
+        width: 100%;
+        margin: 0;
+    }
 }
