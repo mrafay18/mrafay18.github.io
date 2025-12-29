@@ -1,94 +1,120 @@
-<!--final version 2-->
-<!DOCTYPE html> <!-- This line defines the document type and HTML version -->
-<html>
+<!--final version 3 (layout update, wording unchanged)-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Qualifications - MR</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <!-- ensures proper rendering and touch zooming for all devices  -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style1.css" id="mainStyleSheet"> <!--uses code from index.css-->
+    <link rel="stylesheet" type="text/css" href="style1.css" id="mainStyleSheet">
 </head>
+
 <body>
-    <nav class="nav-bar"> <!-- header for page links -->
-        <button id="styleSwitcher">Switch Style</button> <!--switch style button-->
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <a href="index.html"><button>Home Page</button></a>
-        <a href="service.html"><button>Service</button></a>
-    </nav>
+    <header class="site-header">
+        <nav class="nav-bar" aria-label="Primary">
+            <div class="nav-left">
+                <button id="styleSwitcher" class="btn btn-ghost" type="button" aria-label="Switch website style">Switch Style</button>
+            </div>
 
-    <div class="content"> <!-- left and right split like sketch-->
-        <div class="left-column"> <!--resume as embedded pdf file.-->
-            <iframe src="Mohammad_Rafay_Resume.pdf" type="application/pdf" width="100%" height="100%"></iframe>
-        </div>
+            <div class="nav-right">
+                <a class="nav-link" href="index.html">Home Page</a>
+                <a class="nav-link" href="service.html">Service</a>
+            </div>
+        </nav>
+    </header>
 
-        <div class="right-column"> <!--tech skils and interest code section-->
+    <main id="main" class="page">
+        <section class="content-split">
+            <div class="left-column card">
+                <div class="panel-header">
+                    <h2 class="panel-title">Resume</h2>
+                    <p class="panel-subtitle">Embedded PDF</p>
+                </div>
+                <div class="iframe-wrap">
+                    <iframe src="Mohammad_Rafay_Resume.pdf" type="application/pdf" title="Mohammad Rafay Resume"></iframe>
+                </div>
+            </div>
+
+            <div class="right-column card">
                 <h2>Technical Skills:</h2>
-                    <ul>
-                        <li>CompTIA IT Fundamentals+ Certification</li>
-                        <p>
-                            Industry-recognized certification validating foundational knowledge in IT concepts,
-                            software development, networking, security, and system operations.
-                        </p>
+                <ul class="skill-list">
+                    <li>CompTIA IT Fundamentals+ Certification</li>
+                    <p>
+                        Industry-recognized certification validating foundational knowledge in IT concepts,
+                        software development, networking, security, and system operations.
+                    </p>
 
-                        <li>Programming Languages</li>
-                        <p>
-                            Java, Python, C++, C#, TypeScript, JavaScript, SQL, Swift, Haskell, HTML, CSS —
-                            used across backend services, automation frameworks, simulations, and full-stack applications.
-                        </p>
+                    <li>Programming Languages</li>
+                    <p>
+                        Java, Python, C++, C#, TypeScript, JavaScript, SQL, Swift, Haskell, HTML, CSS —
+                        used across backend services, automation frameworks, simulations, and full-stack applications.
+                    </p>
 
-                        <li>Backend & Cloud Technologies</li>
-                        <p>
-                            Experience building scalable backend systems using Spring Boot and RESTful APIs,
-                            integrating cloud infrastructure, databases, and CI/CD pipelines to support
-                            secure, high-volume data processing.
-                        </p>
+                    <li>Backend &amp; Cloud Technologies</li>
+                    <p>
+                        Experience building scalable backend systems using Spring Boot and RESTful APIs,
+                        integrating cloud infrastructure, databases, and CI/CD pipelines to support
+                        secure, high-volume data processing.
+                    </p>
 
-                        <li>Software & Web Development</li>
-                        <p>
-                            Designed and maintained full-stack web and software applications, including
-                            employee-facing dashboards, automation tools, and customer-focused interfaces.
-                        </p>
+                    <li>Software &amp; Web Development</li>
+                    <p>
+                        Designed and maintained full-stack web and software applications, including
+                        employee-facing dashboards, automation tools, and customer-focused interfaces.
+                    </p>
 
-                        <li>Cybersecurity & System Reliability</li>
-                        <p>
-                            Applied cybersecurity standards, monitoring practices, and risk assessments to
-                            improve system resilience, ensure compliance, and protect critical infrastructure.
-                        </p>
+                    <li>Cybersecurity &amp; System Reliability</li>
+                    <p>
+                        Applied cybersecurity standards, monitoring practices, and risk assessments to
+                        improve system resilience, ensure compliance, and protect critical infrastructure.
+                    </p>
 
-                        <li>Tools & Platforms</li>
-                        <p>
-                            IntelliJ, Visual Studio Code, Git, JIRA, Microsoft 365, Azure, Unity, Xcode —
-                            used in Agile development environments for collaboration, testing, and deployment.
-                        </p>
-                    </ul>
+                    <li>Tools &amp; Platforms</li>
+                    <p>
+                        IntelliJ, Visual Studio Code, Git, JIRA, Microsoft 365, Azure, Unity, Xcode —
+                        used in Agile development environments for collaboration, testing, and deployment.
+                    </p>
+                </ul>
 
-                <h2>Areas of Interest:</h2> <!-- Section header -->
-                <!-- Individual blocks for each area of interest -->
-                
-                <h3>Software Engineering</h3>
-                <p>With my strong background in computer engineering and experience as a software engineer intern at the Texas Department of Transportation, I bring a solid foundation in software development using languages like C++ and Python. My ability to analyze data and create efficient software solutions makes me a valuable asset to any software engineering team. I am also skilled in cross-functional collaboration and adhering to government security standards, ensuring the successful execution of complex software projects.</p>
-                <a href="https://www.devry.edu/blog/what-is-software-engineering.html" target="_blank">click here to learn more about software engineering</a> <!-- External link -->
-                
-                <h3>Machine Learning/AI</h3>
-                <p>As a computer engineering major with a demonstrated interest in data analysis and programming, I possess the essential skills and knowledge needed to excel in the field of machine learning and artificial intelligence. My projects, such as the Python program for data encryption and the C++ program for resizing images without distortion, highlight my ability to work with data and algorithms. With a solid foundation in programming languages, I am well-equipped to explore the cutting-edge applications of machine learning and AI.</p>
-                <a href="https://dynamicbusiness.com/featured/ai-specialists.html" target="_blank">click here to learn more about machine learning/AI</a>
-    
-                <h3>Cybersecurity</h3>
-                <p>My certification as a Google Professional Cloud Architect, combined with my experience in cybersecurity tasks such as data encryption and compliance with government security standards, reflects my commitment to maintaining robust security measures. With expertise in critical thinking and problem-solving, I am dedicated to safeguarding systems and data from potential threats. Moreover, my knowledge of cloud computing and IT fundamentals further enhances my ability to contribute effectively to cybersecurity efforts.</p>
-                <a href="https://www.comptia.org/blog/what-is-a-cybersecurity-engineer" target="_blank">click here to learn more about cybersecurity</a>
-                
-                <h3>Graphic Designing</h3>
-                <p>In addition to my technical skills, I also have a creative side. I am good at HTML, CSS, and JavaScript, which I've used for making websites. This mix of technical and creative skills helps me do well in graphic design. I can make designs that look good and are easy to use. Whether it's making websites more engaging or creating interactive user interfaces, I have the versatility and creativity to contribute meaningfully in graphic design roles.</p>
-                <a href="https://www.bls.gov/ooh/arts-and-design/graphic-designers.htm" target="_blank">click here to learn more about graphic designing</a>
-            
-        </div>
-    </div>
+                <hr class="divider">
 
-    <!--contact information-->
-    <h4><center>Contact: (832) 434-8099 | rafaymohammad03@gmail.com | <a href="https://www.linkedin.com/in/mrafay18/" target="_blank">LinkedIn</a></center></h4>
-        
-    <script src="function.js"></script> <!--calls javascript file-->
+                <h2>Areas of Interest:</h2>
 
+                <section class="interest">
+                    <h3>Software Engineering</h3>
+                    <p>With my strong background in computer engineering and experience as a software engineer intern at the Texas Department of Transportation, I bring a solid foundation in software development using languages like C++ and Python. My ability to analyze data and create efficient software solutions makes me a valuable asset to any software engineering team. I am also skilled in cross-functional collaboration and adhering to government security standards, ensuring the successful execution of complex software projects.</p>
+                    <a href="https://www.devry.edu/blog/what-is-software-engineering.html" target="_blank" rel="noopener noreferrer">click here to learn more about software engineering</a>
+                </section>
+
+                <section class="interest">
+                    <h3>Machine Learning/AI</h3>
+                    <p>As a computer engineering major with a demonstrated interest in data analysis and programming, I possess the essential skills and knowledge needed to excel in the field of machine learning and artificial intelligence. My projects, such as the Python program for data encryption and the C++ program for resizing images without distortion, highlight my ability to work with data and algorithms. With a solid foundation in programming languages, I am well-equipped to explore the cutting-edge applications of machine learning and AI.</p>
+                    <a href="https://dynamicbusiness.com/featured/ai-specialists.html" target="_blank" rel="noopener noreferrer">click here to learn more about machine learning/AI</a>
+                </section>
+
+                <section class="interest">
+                    <h3>Cybersecurity</h3>
+                    <p>My certification as a Google Professional Cloud Architect, combined with my experience in cybersecurity tasks such as data encryption and compliance with government security standards, reflects my commitment to maintaining robust security measures. With expertise in critical thinking and problem-solving, I am dedicated to safeguarding systems and data from potential threats. Moreover, my knowledge of cloud computing and IT fundamentals further enhances my ability to contribute effectively to cybersecurity efforts.</p>
+                    <a href="https://www.comptia.org/blog/what-is-a-cybersecurity-engineer" target="_blank" rel="noopener noreferrer">click here to learn more about cybersecurity</a>
+                </section>
+
+                <section class="interest">
+                    <h3>Graphic Designing</h3>
+                    <p>In addition to my technical skills, I also have a creative side. I am good at HTML, CSS, and JavaScript, which I've used for making websites. This mix of technical and creative skills helps me do well in graphic design. I can make designs that look good and are easy to use. Whether it's making websites more engaging or creating interactive user interfaces, I have the versatility and creativity to contribute meaningfully in graphic design roles.</p>
+                    <a href="https://www.bls.gov/ooh/arts-and-design/graphic-designers.htm" target="_blank" rel="noopener noreferrer">click here to learn more about graphic designing</a>
+                </section>
+            </div>
+        </section>
+
+        <footer class="footer card">
+            <p class="contact">
+                Contact: (832) 434-8099 | rafaymohammad03@gmail.com |
+                <a href="https://www.linkedin.com/in/mrafay18/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+        </footer>
+    </main>
+
+    <script src="function.js"></script>
 </body>
 </html>

@@ -1,65 +1,93 @@
-<!--final version 2-->
+<!--final version 3 (layout update, wording unchanged)-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Home Page - MR</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <!-- ensures proper rendering and touch zooming for all devices  -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style1.css" id="mainStyleSheet"> <!--uses code from index.css-->
+    <link rel="stylesheet" type="text/css" href="style1.css" id="mainStyleSheet">
 </head>
+
 <body>
-    <nav class="nav-bar"> <!-- header for page links -->
-        <button id="styleSwitcher">Switch Style</button> <!--switch style button-->
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <a href="qualifications.html"><button>Qualifications</button></a>
-        <a href="service.html"><button>Service</button></a>
-    </nav>
+    <header class="site-header">
+        <nav class="nav-bar" aria-label="Primary">
+            <div class="nav-left">
+                <button id="styleSwitcher" class="btn btn-ghost" type="button" aria-label="Switch website style">Switch Style</button>
+            </div>
 
-    <header>
-        <div>
-            <img src="me.jpg">
-            <h1>Mohammad Rafay</h1>
-            <p>"KHI -> HTX -> Wherever the journey leads me</p>
-            <h2>About Me</h2>
-            <p>I am a Computer Engineering graduate from Texas A&M University, Class of 2025. I currently work as a Software Developer at Norstella, where I design and build scalable backend services using Java and Spring Boot, develop RESTful APIs, and optimize data access layers to support secure, high-volume healthcare data processing. I have also worked at Apple Inc., Y-12 National Security Complex, and TxDOT, where I worked across software automation, backend and frontend debugging, cybersecurity engineering, and simulation development. As the previous President of Eta Kappa Nu (HKN), I contributed to the engineering community. I am passionate about problem-solving, software development, and cybersecurity, and I am eager to explore opportunities that further expand my knowledge and career.</p>
-        </div>
+            <div class="nav-right">
+                <a class="nav-link" href="qualifications.html">Qualifications</a>
+                <a class="nav-link" href="service.html">Service</a>
+            </div>
+        </nav>
     </header>
-    
-    <!--dropdown menu-->
-    <details>
-        <summary>Education</summary>
-        <p>Texas A&M University, College Station, Texas - Bachelor of Science in Computer Engineering, December 2025</p>
-        <p>William B. Travis High School, Richmond, Texas - High School Degree, June 2021</p>
-    </details>
-    <details>
-        <summary>Experience</summary>
-        <p>Messages Software Quality Automation Engineer at Apple Inc. (January 2025 - June 2025)</p>
-        <p>Technical Support Advisor at Apple Inc. (May 2023-December 2025)</p>
-        <p>Software Engineering Intern at Y-12 National Security Complex (May 2024 - January 2025)</p>
-        <p>Cybersecurity Engineering Intern at Texas Department of Transportation (May 2023-August 2023)</p>
-        <p>Product Zone Specialist at Apple Inc. (May 2022-August 2022)</p>
-        <p>Lead Instructor at Mathnasium of Aliana (July 2021-May 2022)</p>
-        <p>Instructor at Mathnasium of Aliana (August 2020-June 2021)</p>
-    </details>
-    <details>
-        <summary>Skills</summary>
-        <p>
-            <strong>Programming Languages:</strong> Java, Python, C++, C#, TypeScript, JavaScript, SQL, Swift, Haskell<br>
-            <strong>Frameworks & Technologies:</strong> Spring Boot, REST APIs, CI/CD Pipelines, Cloud Infrastructure, SaaS, Unity, Xcode<br>
-            <strong>Databases:</strong> PostgreSQL, SQL Databases<br>
-            <strong>Tools & Platforms:</strong> IntelliJ, Visual Studio Code, JIRA, Microsoft 365, Azure, Git<br>
-            <strong>Domains:</strong> Backend Development, Software Automation, Cybersecurity, Distributed Systems, Data Processing<br>
-            <strong>Soft Skills:</strong> Leadership, Project Management, Agile/Scrum, Problem Solving, Analytical Thinking
-        </p>
-</details>
 
+    <main id="main" class="page">
+        <section class="hero card">
+            <div class="hero-grid">
+                <div class="hero-media">
+                    <img src="me.jpg" alt="Photo of Mohammad Rafay" class="avatar">
+                </div>
 
-    <!--contact information-->
-    <h4><center>Contact: (832) 434-8099 | rafaymohammad03@gmail.com | <a href="https://www.linkedin.com/in/mrafay18/" target="_blank">LinkedIn</a></center></h4>
-    
-    <script src="function.js"></script> <!--calls javascript file-->
+                <div class="hero-content">
+                    <h1>Mohammad Rafay</h1>
+                    <p class="subtitle">KHI -> HTX -> Wherever the journey leads me</p>
 
+                    <h2>About Me</h2>
+                    <p>
+                        I am a Computer Engineering graduate from Texas A&amp;M University, Class of 2025. I currently work as a Software Developer at Norstella, where I design and build scalable backend services using Java and Spring Boot, develop RESTful APIs, and optimize data access layers to support secure, high-volume healthcare data processing. I have also worked at Apple Inc., Y-12 National Security Complex, and TxDOT, where I worked across software automation, backend and frontend debugging, cybersecurity engineering, and simulation development. As the previous President of Eta Kappa Nu (HKN), I contributed to the engineering community. I am passionate about problem-solving, software development, and cybersecurity, and I am eager to explore opportunities that further expand my knowledge and career.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="accordion-grid">
+            <details class="details card">
+                <summary>Education</summary>
+                <div class="details-body">
+                    <p>Texas A&amp;M University, College Station, Texas - Bachelor of Science in Computer Engineering, December 2025</p>
+                    <p>William B. Travis High School, Richmond, Texas - High School Degree, June 2021</p>
+                </div>
+            </details>
+
+            <details class="details card">
+                <summary>Experience</summary>
+                <div class="details-body">
+                    <p>Messages Software Quality Automation Engineer at Apple Inc. (January 2025 - June 2025)</p>
+                    <p>Technical Support Advisor at Apple Inc. (May 2023-December 2025)</p>
+                    <p>Software Engineering Intern at Y-12 National Security Complex (May 2024 - January 2025)</p>
+                    <p>Cybersecurity Engineering Intern at Texas Department of Transportation (May 2023-August 2023)</p>
+                    <p>Product Zone Specialist at Apple Inc. (May 2022-August 2022)</p>
+                    <p>Lead Instructor at Mathnasium of Aliana (July 2021-May 2022)</p>
+                    <p>Instructor at Mathnasium of Aliana (August 2020-June 2021)</p>
+                </div>
+            </details>
+
+            <details class="details card">
+                <summary>Skills</summary>
+                <div class="details-body">
+                    <p>
+                        <strong>Programming Languages:</strong> Java, Python, C++, C#, TypeScript, JavaScript, SQL, Swift, Haskell<br>
+                        <strong>Frameworks &amp; Technologies:</strong> Spring Boot, REST APIs, CI/CD Pipelines, Cloud Infrastructure, SaaS, Unity, Xcode<br>
+                        <strong>Databases:</strong> PostgreSQL, SQL Databases<br>
+                        <strong>Tools &amp; Platforms:</strong> IntelliJ, Visual Studio Code, JIRA, Microsoft 365, Azure, Git<br>
+                        <strong>Domains:</strong> Backend Development, Software Automation, Cybersecurity, Distributed Systems, Data Processing<br>
+                        <strong>Soft Skills:</strong> Leadership, Project Management, Agile/Scrum, Problem Solving, Analytical Thinking
+                    </p>
+                </div>
+            </details>
+        </section>
+
+        <footer class="footer card">
+            <p class="contact">
+                Contact: (832) 434-8099 | rafaymohammad03@gmail.com |
+                <a href="https://www.linkedin.com/in/mrafay18/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+        </footer>
+    </main>
+
+    <script src="function.js"></script>
 </body>
 </html>

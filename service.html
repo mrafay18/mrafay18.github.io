@@ -1,54 +1,76 @@
-<!--final version 2-->
+<!--final version 3 (layout update, wording unchanged)-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Community Service - MR</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <!-- ensures proper rendering and touch zooming for all devices  -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style1.css" id="mainStyleSheet"> <!--uses code from index.css-->
+    <link rel="stylesheet" type="text/css" href="style1.css" id="mainStyleSheet">
 </head>
+
 <body>
-    <nav class="nav-bar"> <!-- header for page links -->
-        <button id="styleSwitcher">Switch Style</button> <!--switch style button-->
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <a href="index.html"><button>Home Page</button></a>
-        <a href="qualifications.html"><button>Qualifications</button></a>
-    </nav>
+    <header class="site-header">
+        <nav class="nav-bar" aria-label="Primary">
+            <div class="nav-left">
+                <button id="styleSwitcher" class="btn btn-ghost" type="button" aria-label="Switch website style">Switch Style</button>
+            </div>
 
-    <h1><center>Community Service</center></h1>
+            <div class="nav-right">
+                <a class="nav-link" href="index.html">Home Page</a>
+                <a class="nav-link" href="qualifications.html">Qualifications</a>
+            </div>
+        </nav>
+    </header>
 
+    <main id="main" class="page">
+        <section class="card page-title">
+            <h1>Community Service</h1>
+        </section>
 
-    <h2>Current Community Service:</h2>
-    <!--hhrd-->
-    <div class="organization">
-        <a href="https://www1.hhrd.org/" target="_blank"><h4>Helping hand for Relief and development:</h4></a>
-        <img src="hhrd.jpeg" alt="Helping Hand for Relief and Development">
-        <p>An amazing volunteering opportunity where I was able to load freight containers with donated items to be distrubuted to variouos third world countries.</p>
-    </div>
+        <section class="card">
+            <h2>Current Community Service:</h2>
 
-    <!--Big Event-->
-    <div class="organization">
-        <a href="https://bigevent.tamu.edu/" target="_blank"><h4>Big Event:</h4></a>
-        <img src="big.png" alt="Big Event">
-        <p>A community volunteer event with active participation from Aggies to assist the surrounding community through various tasks.</p>
-    </div>
+            <div class="org-grid">
+                <div class="organization card-inner">
+                    <a href="https://www1.hhrd.org/" target="_blank" rel="noopener noreferrer"><h4>Helping hand for Relief and development:</h4></a>
+                    <img src="hhrd.jpeg" alt="Helping Hand for Relief and Development">
+                    <p>An amazing volunteering opportunity where I was able to load freight containers with donated items to be distrubuted to variouos third world countries.</p>
+                </div>
 
-    <h2>Planned Community Service:</h2>
-    <!--MPGH-->
-    <a href="https://www.maryammasjid.org/" target="_blank"><h4>Muslim Programmers of Greater Houston (MPGH):</h4></a>
-    <p>I want to initiate a programming mentorship program for high schoolers and college students held at local mosques in Houston to assist and educate them to learn about programming languages and corporate opportunities.</p>
-            
-    <!--Outreach in the Barrio-->
-    <a href="https://www.instagram.com/outreachinthebarriohouston/" target="_blank"><h4>Outreach in the Barrio:</h4></a>
-    <p>I plan on being a part of this outreach organization that assists neighborhoods in Houston by providing clothing, food, first aid, etc.</p>
-            
+                <div class="organization card-inner">
+                    <a href="https://bigevent.tamu.edu/" target="_blank" rel="noopener noreferrer"><h4>Big Event:</h4></a>
+                    <img src="big.png" alt="Big Event">
+                    <p>A community volunteer event with active participation from Aggies to assist the surrounding community through various tasks.</p>
+                </div>
+            </div>
+        </section>
 
-    <!--contact information-->
-    <h4><center>Contact: (832) 434-8099 | rafaymohammad03@gmail.com | <a href="https://www.linkedin.com/in/mrafay18/" target="_blank">LinkedIn</a></center></h4>
-        
-    <script src="function.js"></script> <!--calls javascript file-->
+        <section class="card">
+            <h2>Planned Community Service:</h2>
 
+            <div class="planned">
+                <div class="planned-item">
+                    <a href="https://www.maryammasjid.org/" target="_blank" rel="noopener noreferrer"><h4>Muslim Programmers of Greater Houston (MPGH):</h4></a>
+                    <p>I want to initiate a programming mentorship program for high schoolers and college students held at local mosques in Houston to assist and educate them to learn about programming languages and corporate opportunities.</p>
+                </div>
+
+                <div class="planned-item">
+                    <a href="https://www.instagram.com/outreachinthebarriohouston/" target="_blank" rel="noopener noreferrer"><h4>Outreach in the Barrio:</h4></a>
+                    <p>I plan on being a part of this outreach organization that assists neighborhoods in Houston by providing clothing, food, first aid, etc.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer card">
+            <p class="contact">
+                Contact: (832) 434-8099 | rafaymohammad03@gmail.com |
+                <a href="https://www.linkedin.com/in/mrafay18/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+        </footer>
+    </main>
+
+    <script src="function.js"></script>
 </body>
 </html>
