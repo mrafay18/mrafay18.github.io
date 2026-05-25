@@ -1,93 +1,147 @@
-<!--final version 3 (layout update, wording unchanged)-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home Page - MR</title>
+    <title>Mohammad Rafay | Software Engineer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style1.css" id="mainStyleSheet">
+    <meta name="description" content="Professional portfolio website for Mohammad Rafay, a Computer Engineering graduate and Software Engineer focused on backend development, automation, cybersecurity, and modern web experiences.">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-        <nav class="nav-bar" aria-label="Primary">
-            <div class="nav-left">
-                <button id="styleSwitcher" class="btn btn-ghost" type="button" aria-label="Switch website style">Light/Dark Mode</button>
-            </div>
+        <nav class="nav-bar" aria-label="Primary navigation">
+            <a class="brand" href="index.html" aria-label="Mohammad Rafay home">
+                <span class="brand-mark">MR</span>
+                <span class="brand-text">Mohammad Rafay</span>
+            </a>
 
-            <div class="nav-right">
+            <div class="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link" href="qualifications.html">Qualifications</a>
+                <a class="nav-link" href="projects.html">Projects</a>
                 <a class="nav-link" href="service.html">Service</a>
             </div>
         </nav>
     </header>
 
-    <main id="main" class="page">
-        <section class="hero card">
+    <main id="main">
+        <section class="hero section-shell">
             <div class="hero-grid">
-                <div class="hero-media">
-                    <img src="me.jpg" alt="Photo of Mohammad Rafay" class="avatar">
-                </div>
-
                 <div class="hero-content">
-                    <h1>Mohammad Rafay</h1>
-                    <p class="subtitle">KHI -> HTX -> Wherever the journey leads me</p>
-
-                    <h2>About Me</h2>
-                    <p>
-                        I am a Computer Engineering graduate from Texas A&amp;M University, Class of 2025. I currently work as a Software Developer at Norstella, where I design and build scalable backend services using Java and Spring Boot, develop RESTful APIs, and optimize data access layers to support secure, high-volume healthcare data processing. I have also worked at Apple Inc., Y-12 National Security Complex, and TxDOT, where I worked across software automation, backend and frontend debugging, cybersecurity engineering, and simulation development. As the previous President of Eta Kappa Nu (HKN), I contributed to the engineering community. I am passionate about problem-solving, software development, and cybersecurity, and I am eager to explore opportunities that further expand my knowledge and career.
+                    <p class="eyebrow">Computer Engineering • Software Development • Product-Minded Engineering</p>
+                    <h1>Building reliable software with a practical, polished, and people-focused approach.</h1>
+                    <p class="hero-copy">
+                        I am Mohammad Rafay, a Computer Engineering graduate from Texas A&amp;M University with experience across backend engineering, software quality automation, cybersecurity, and client-facing web development. My work blends technical depth with strong communication: I enjoy turning complex requirements into dependable systems, clean user experiences, and products that solve real problems.
                     </p>
+                    <div class="hero-actions" aria-label="Primary actions">
+                        <a class="btn btn-primary" href="qualifications.html">View Qualifications</a>
+                        <a class="btn btn-secondary" href="projects.html">Explore Projects</a>
+                    </div>
                 </div>
+
+                <aside class="profile-card" aria-label="Professional profile summary">
+                    <img src="me.jpg" alt="Photo of Mohammad Rafay" class="avatar">
+                    <div>
+                        <h2>Mohammad Rafay</h2>
+                        <p>Software Engineer based in the Houston area, focused on backend systems, automation, cloud workflows, and professional web solutions.</p>
+                    </div>
+                </aside>
             </div>
         </section>
 
-        <section class="accordion-grid">
-            <details class="details card">
-                <summary>Education</summary>
-                <div class="details-body">
-                    <p>Texas A&amp;M University, College Station, Texas - Bachelor of Science in Computer Engineering, December 2025</p>
-                    <p>William B. Travis High School, Richmond, Texas - High School Degree, June 2021</p>
-                </div>
-            </details>
-
-            <details class="details card">
-                <summary>Experience</summary>
-                <div class="details-body">
-                    <p>Software Developer at Norstella (January 2026 - Present)</p>
-                    <p>Messages Software Quality Automation Engineer at Apple Inc. (January 2025 - June 2025)</p>
-                    <p>Technical Support Advisor at Apple Inc. (May 2023-December 2025)</p>
-                    <p>Software Engineering Intern at Y-12 National Security Complex (May 2024 - January 2025)</p>
-                    <p>Cybersecurity Engineering Intern at Texas Department of Transportation (May 2023-August 2023)</p>
-                    <p>Product Zone Specialist at Apple Inc. (May 2022-August 2022)</p>
-                    <p>Lead Instructor at Mathnasium of Aliana (July 2021-May 2022)</p>
-                    <p>Instructor at Mathnasium of Aliana (August 2020-June 2021)</p>
-                </div>
-            </details>
-
-            <details class="details card">
-                <summary>Skills</summary>
-                <div class="details-body">
-                    <p>
-                        <strong>Programming Languages:</strong> Java, Python, C++, C#, TypeScript, JavaScript, SQL, Swift, Haskell<br>
-                        <strong>Frameworks &amp; Technologies:</strong> Spring Boot, REST APIs, CI/CD Pipelines, Cloud Infrastructure, SaaS, Unity, Xcode<br>
-                        <strong>Databases:</strong> PostgreSQL, SQL Databases<br>
-                        <strong>Tools &amp; Platforms:</strong> IntelliJ, Visual Studio Code, JIRA, Microsoft 365, Azure, Git<br>
-                        <strong>Domains:</strong> Backend Development, Software Automation, Cybersecurity, Distributed Systems, Data Processing<br>
-                        <strong>Soft Skills:</strong> Leadership, Project Management, Agile/Scrum, Problem Solving, Analytical Thinking
-                    </p>
-                </div>
-            </details>
+        <section class="section-shell two-column-section">
+            <div>
+                <p class="eyebrow">About Me</p>
+                <h2>Engineer, builder, and problem-solver.</h2>
+            </div>
+            <div class="rich-text">
+                <p>
+                    I bring a well-rounded engineering background shaped by professional experience at Norstella, Apple, Y-12 National Security Complex, and TxDOT. At Norstella, I work on Java Spring Boot backend services, REST APIs, SQL data access, cloud-based workflows, and reliable healthcare platform components. At Apple, I strengthened software quality for the Messages app by building automation, validating release workflows, and communicating actionable findings across engineering teams.
+                </p>
+                <p>
+                    What I bring is more than coding ability. I bring ownership, curiosity, and the ability to connect technical execution with real business outcomes. Whether I am improving backend reliability, designing a responsive client website, debugging automation failures, or leading an engineering organization, I focus on building solutions that are maintainable, thoughtful, and useful to the people who depend on them.
+                </p>
+            </div>
         </section>
 
-        <footer class="footer card">
-            <p class="contact">
-                Contact: (832) 434-8099 | rafaymohammad03@gmail.com |
-                <a href="https://www.linkedin.com/in/mrafay18/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </p>
-        </footer>
+        <section class="section-shell">
+            <div class="section-heading">
+                <p class="eyebrow">Core Strengths</p>
+                <h2>Skills refined for modern software teams.</h2>
+                <p>
+                    A focused snapshot of the technical and professional abilities I use across backend engineering, automation, cloud workflows, and full-stack projects.
+                </p>
+            </div>
+
+            <div class="skill-card-grid">
+                <article class="feature-card">
+                    <span class="feature-number">01</span>
+                    <h3>Backend Engineering</h3>
+                    <p>Java, Spring Boot, REST APIs, JSON workflows, logging, debugging, API validation, and service-to-service communication.</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">02</span>
+                    <h3>Data &amp; Cloud Workflows</h3>
+                    <p>SQL query optimization, backend data access patterns, AWS-hosted virtual machine workflows, Postman testing, and reliable data processing.</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">03</span>
+                    <h3>Automation &amp; Quality</h3>
+                    <p>Python and Swift test automation, XCTest, regression testing, CI/CD reporting, software triage, and release-readiness validation.</p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">04</span>
+                    <h3>Web &amp; Product Development</h3>
+                    <p>HTML, CSS, JavaScript, TypeScript, React, responsive layouts, user workflows, client websites, and polished portfolio/product experiences.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-shell highlight-band">
+            <div>
+                <p class="eyebrow">Featured Client Work</p>
+                <h2>Accent Auto</h2>
+                <p>
+                    I built and maintain a client-facing web presence for Accent Auto, a Houston-area automotive business. The project showcases practical web development through responsive inventory pages, vehicle detail views, filtering, contact workflows, and customer inquiry support.
+                </p>
+            </div>
+            <a class="btn btn-primary" href="projects.html#accent-auto">View Case Study</a>
+        </section>
+
+        <section class="section-shell stats-grid" aria-label="Professional snapshot">
+            <article class="stat-card">
+                <strong>Texas A&amp;M</strong>
+                <span>B.S. Computer Engineering</span>
+            </article>
+            <article class="stat-card">
+                <strong>Norstella</strong>
+                <span>Software Engineer</span>
+            </article>
+            <article class="stat-card">
+                <strong>Apple</strong>
+                <span>Messages QA Automation</span>
+            </article>
+            <article class="stat-card">
+                <strong>HKN</strong>
+                <span>President &amp; Corporate Chair</span>
+            </article>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> Mohammad Rafay. Built with HTML, CSS, and JavaScript.</p>
+        <div class="footer-links">
+            <a href="mailto:rafaymohammad03@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/mrafay18/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="Mohammad_Rafay_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        </div>
+    </footer>
 
     <script src="function.js"></script>
 </body>

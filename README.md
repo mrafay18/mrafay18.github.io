@@ -1,124 +1,100 @@
 # Personal Portfolio Website — Mohammad Rafay
 
-This repository contains the source code for my personal portfolio website. The site presents my background, experience, skills, and community involvement in a polished, professional format, with support for multiple visual themes.
+This repository contains the source code for my personal portfolio website. The site presents my background, experience, technical skills, selected projects, and community involvement in a polished professional format.
 
-The website is built using **vanilla HTML, CSS, and JavaScript** and is fully responsive across desktop, tablet, and mobile devices.
+The website is built with **vanilla HTML, CSS, and JavaScript** and is responsive across desktop, tablet, and mobile screens.
 
 ---
 
-## 🌐 Purpose
+## Purpose
 
 This website serves as:
+
 - A professional online presence
 - A companion to my resume and LinkedIn profile
-- A showcase of my background in software engineering, backend development, and cybersecurity
-- A demonstration of clean UI/UX design, responsiveness, and maintainable front-end architecture
+- A showcase of my software engineering, backend development, automation, cybersecurity, and web development background
+- A portfolio space for selected projects, including Accent Auto
+- A demonstration of clean UI/UX design and maintainable front-end structure
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 - `index.html`  
-  Home page containing About Me, Education, Experience, and Skills
+  Home page with About Me, professional summary, core strengths, and featured work
 
 - `qualifications.html`  
-  Resume view with detailed technical skills and interests
+  Resume view with detailed technical skills and experience areas
+
+- `projects.html`  
+  Project showcase page featuring Accent Auto, BluStick, LED Matrix Camera Display, and Point-of-Sale System
 
 - `service.html`  
-  Community service and volunteering experience
+  Community service and planned service initiatives
 
-- `style1.css`  
-  Consulting-style professional theme
-
-- `style2.css`  
-  Cyberhacker / terminal-style theme
+- `style.css`  
+  Single professional stylesheet used by every page
 
 - `function.js`  
-  Theme switching logic and dynamic header brand injection
+  Small JavaScript enhancements for active navigation state and footer year
 
 - `Mohammad_Rafay_Resume.pdf`  
-  Downloadable resume
+  Embedded and downloadable resume
 
 - `me.jpg`  
-  Profile photo used across the site
+  Profile photo used on the home page
 
-- `README.md`  
-  Project documentation
-
-
----
-
-## 🎨 Themes & Styling
-
-The website supports **two distinct visual themes**, switchable at runtime.
-
-### **Style 1 — Consulting / Professional**
-- Clean, structured design inspired by consulting firms
-- Strong visual hierarchy and spacing
-- Subtle animations and transitions
-- Two-column “About Me” layout on larger screens
-- Professional header brand mark with dynamic name lockup
-
-### **Style 2 — Cyberhacker**
-- Terminal-inspired aesthetic
-- Neon accents, scanlines, and monospace typography
-- Experimental and technical visual identity
-
-The selected theme is **persisted using `localStorage`**, allowing the preference to remain consistent across page reloads and navigation.
+- `hhrd.jpeg` and `big.png`  
+  Images used on the service page
 
 ---
 
-## ⚙️ JavaScript Functionality
+## Styling Direction
 
-`function.js` provides the following functionality:
-- Toggles between `style1.css` and `style2.css`
-- Persists the selected theme using `localStorage`
-- Dynamically injects the `<h1>` name into the header as a brand lockup  
-  (no hardcoded text, no duplicated content, no HTML changes required)
+The site now uses one modern professional design system instead of multiple themes.
 
-All logic is implemented using **plain JavaScript**, without external libraries.
+The updated visual style includes:
 
----
-
-## 📱 Responsiveness & Accessibility
-
-- Fully responsive across:
-  - 13” / 15–16” laptops
-  - Tablets (iPadOS, Android)
-  - Mobile devices (iOS, Android)
-- Built with:
-  - CSS Grid and Flexbox
-  - `clamp()` for fluid typography and sizing
-  - `prefers-reduced-motion` support
-- Includes a **“Skip to content”** link for improved keyboard navigation
+- Contemporary neutral background
+- Navy, blue, teal, and subtle gold accents
+- Recruiter-friendly typography and spacing
+- Modern cards, rounded panels, and soft shadows
+- Responsive layouts using CSS Grid and Flexbox
+- Accessible navigation and skip-to-content support
 
 ---
 
-## 🚀 Running the Project
+## JavaScript Functionality
 
-### Option 1: visit mrafay18.github.io
+`function.js` provides lightweight progressive enhancement:
 
-### Option 2: Open in GitHub Codespaces
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-7f7980b617ed060a017424585567c406b6ee15c891e84e1186181d67ecf80aa0.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=13539177)
+- Adds the current year to the footer
+- Highlights the active navigation link based on the current page
 
-### Option 3: Run Locally
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-Open index.html in any modern web browser
-(No build step or server required)
+The previous theme-switching logic was removed because the site now uses a single professional stylesheet.
 
-🧠 Technologies Used
-HTML5
+---
 
-CSS3 (Grid, Flexbox, animations, responsive design)
+## Running the Project
 
-JavaScript (DOM manipulation, localStorage)
+Open `index.html` in any modern web browser.
 
-No frameworks or third-party libraries
+No build step, package manager, or framework is required.
 
-📬 Contact
-Email: rafaymohammad03@gmail.com
+---
 
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Responsive design with CSS Grid and Flexbox
+
+---
+
+## Contact
+
+Email: rafaymohammad03@gmail.com  
 LinkedIn: https://www.linkedin.com/in/mrafay18
+
 © Mohammad Rafay

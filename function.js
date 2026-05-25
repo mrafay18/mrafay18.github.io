@@ -1,21 +1,29 @@
-//final version 2
-/*var num = 0; // global variable
+// Adds small progressive-enhancement behavior without requiring multiple CSS files.
+// The website now uses one professional stylesheet: style.css.
 
-function button1(){
-    num++;
-    document.getElementById("output").innerHTML = "Press x " + num;
-}*/
+// Wait until the page is fully parsed before touching DOM elements.
+document.addEventListener("DOMContentLoaded", function () {
+    // Show the current year in every footer that includes <span id="year"></span>.
+    var yearElement = document.getElementById("year");
 
-//final version 2 (unchanged functionality)
-function toggleStyleSheet(){
-    var stylesheet = document.getElementById("mainStyleSheet");
-    var newFileName = stylesheet.getAttribute("href") === "style1.css" ? "style2.css" : "style1.css";
-    stylesheet.setAttribute("href", newFileName);
-    localStorage.setItem("stylesheet", newFileName);
-}
+    // Only update the year if the element exists on the current page.
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
 
-window.onload = function(){
-    var preferredStyle = localStorage.getItem("stylesheet") || "style1.css";
-    document.getElementById("mainStyleSheet").setAttribute("href", preferredStyle);
-    document.getElementById('styleSwitcher').addEventListener('click', toggleStyleSheet);
-};
+    // Get the filename for the current page. Default to index.html when the path is empty.
+    var currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+    // Find every navigation link on the page.
+    var navLinks = document.querySelectorAll(".nav-link");
+
+    // Add an active state to the navigation link that matches the current page.
+    navLinks.forEach(function (link) {
+        var linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
+        }
+    });
+});
